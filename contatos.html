@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#08090a">
+    <meta name="description" content="Entre em contato com Messias Uchôa para conversar sobre projetos e oportunidades.">
+    <title>Contato — Messias Uchôa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contatos.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header" id="top">
+        <a class="brand" href="index.html" aria-label="Messias Uchôa, página inicial"><span class="brand-mark" aria-hidden="true">M</span><span>Messias Uchôa</span></a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-menu" data-menu-toggle><span></span><span></span></button>
+        <nav class="site-nav" aria-label="Navegação principal">
+            <ul id="site-menu" data-site-menu>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="habilidades.html">Habilidades</a></li>
+                <li><a href="contatos.html" aria-current="page">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="page-heading" data-reveal>
+            <p class="eyebrow">04 / Conversa</p>
+            <h1>Vamos <span class="script-word">conversar</span></h1>
+            <p class="lede">Tem uma ideia, uma oportunidade ou só quer trocar experiências? Escreva para mim.</p>
+        </section>
+        <section class="contact-layout content-section">
+            <aside class="contact-note" data-reveal>
+                <p class="section-kicker">Uma boa conversa começa assim</p>
+                <p class="script-word" aria-hidden="true">Olá!</p>
+                <p>Conte um pouco sobre o que você está imaginando. Seu aplicativo de e-mail será aberto com a mensagem pronta para revisar e enviar.</p>
+                <div class="contact-details">
+                    <div class="contact-detail"><strong>Disponibilidade</strong><span>Projetos e colaborações</span></div>
+                    <div class="contact-detail"><strong>Retorno</strong><span>Assim que possível</span></div>
+                </div>
+            </aside>
+            <form class="contact-form" data-contact-form data-reveal>
+                <div class="form-field"><label for="nome">Seu nome</label><input id="nome" name="nome" type="text" autocomplete="name" placeholder="Como posso chamar você?" required></div>
+                <div class="form-field"><label for="email">Seu e-mail</label><input id="email" name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required></div>
+                <div class="form-field"><label for="mensagem">Sua mensagem</label><textarea id="mensagem" name="mensagem" placeholder="Escreva sua ideia por aqui..." required></textarea></div>
+                <div class="form-actions"><button class="button" type="submit">Preparar e-mail <span class="button-arrow" aria-hidden="true">↗</span></button><p class="form-status" data-form-status aria-live="polite"></p></div>
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer"><p>© 2026 Messias Uchôa · Portfólio</p><a class="back-to-top" href="#top">Voltar ao início ↑</a></footer>
+</body>
+</html>

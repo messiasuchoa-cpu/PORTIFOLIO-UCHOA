@@ -1,0 +1,29 @@
+.skill-category {
+    padding: 28px 0;
+    border-top: 1px solid var(--line);
+}
+
+.skill-category-header {
+    display: flex;
+    margin-bottom: 22px;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.skill-category h2 {
+    margin: 0;
+    font-family: var(--serif);
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.skill-category p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.skill-category .skills-list {
+    margin: 0;
+}

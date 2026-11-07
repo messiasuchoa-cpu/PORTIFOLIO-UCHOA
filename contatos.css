@@ -1,0 +1,27 @@
+.contact-details {
+    display: grid;
+    margin-top: 32px;
+    gap: 14px;
+}
+
+.contact-detail {
+    padding-top: 14px;
+    border-top: 1px solid var(--line);
+}
+
+.contact-detail strong {
+    display: block;
+    margin-bottom: 3px;
+    color: var(--silver);
+    font-family: var(--mono);
+    font-size: 9px;
+    font-weight: 400;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.contact-detail span {
+    color: var(--paper);
+    font-family: var(--serif);
+    font-size: 19px;
+}

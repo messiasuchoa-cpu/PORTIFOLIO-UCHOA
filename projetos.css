@@ -1,0 +1,55 @@
+.projects-page .project-card {
+    min-height: 330px;
+}
+
+.project-card .project-visual {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 42%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0.42;
+    pointer-events: none;
+}
+
+.project-card .project-visual::before,
+.project-card .project-visual::after {
+    position: absolute;
+    border: 1px solid rgba(224, 227, 229, 0.44);
+    content: '';
+}
+
+.project-card .project-visual::before {
+    top: 15%;
+    right: 15%;
+    width: 70%;
+    height: 70%;
+    transform: rotate(45deg);
+}
+
+.project-card .project-visual::after {
+    top: 26%;
+    right: 26%;
+    width: 48%;
+    height: 48%;
+    border-radius: 50%;
+}
+
+.project-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.project-card .project-index {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.project-card .project-index::after {
+    width: 32px;
+    height: 1px;
+    background: var(--silver-dark);
+    content: '';
+}
