@@ -78,6 +78,6 @@ if (contactForm instanceof HTMLFormElement) {
         const status = contactForm.querySelector('[data-form-status]');
 
         if (status) status.textContent = 'Abrindo seu aplicativo de e-mail para revisar e enviar a mensagem...';
-        window.location.href = `mailto:?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:messiasdesouzauchoa@gmail.com?subject=${subject}&body=${body}`;
     });
 }

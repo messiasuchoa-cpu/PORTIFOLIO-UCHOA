@@ -25,3 +25,67 @@
     font-family: var(--serif);
     font-size: 19px;
 }
+
+.find-me-section {
+    padding-top: 30px;
+}
+
+.contact-methods {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.contact-method {
+    display: grid;
+    min-width: 0;
+    padding: 20px;
+    align-items: center;
+    grid-template-columns: 44px minmax(0, 1fr) auto;
+    gap: 14px;
+    border: 1px solid var(--line);
+    background: linear-gradient(145deg, rgba(202, 205, 207, 0.055), transparent 70%);
+    transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.contact-method:hover {
+    border-color: rgba(224, 227, 229, 0.5);
+    transform: translateY(-3px);
+}
+
+.contact-method img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.contact-method > span:nth-child(2) {
+    display: grid;
+    min-width: 0;
+    gap: 4px;
+}
+
+.contact-method strong {
+    color: var(--silver);
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.contact-method > span:nth-child(2) > span {
+    overflow-wrap: anywhere;
+    color: var(--paper);
+    font-size: 13px;
+}
+
+.contact-method-arrow {
+    color: var(--silver);
+}
+
+@media (max-width: 900px) {
+    .contact-methods {
+        grid-template-columns: 1fr;
+    }
+}

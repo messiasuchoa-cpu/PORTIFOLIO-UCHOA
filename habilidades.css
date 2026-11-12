@@ -27,3 +27,50 @@
 .skill-category .skills-list {
     margin: 0;
 }
+
+.technology-grid {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+    list-style: none;
+}
+
+.technology-card {
+    display: flex;
+    min-height: 150px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 14px;
+    border: 1px solid var(--line);
+    background: linear-gradient(145deg, rgba(202, 205, 207, 0.055), transparent 70%);
+    color: var(--paper);
+    font-family: var(--serif);
+    font-size: 17px;
+    transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.technology-card:hover {
+    border-color: rgba(224, 227, 229, 0.5);
+    transform: translateY(-3px);
+}
+
+.technology-card img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+@media (max-width: 520px) {
+    .skill-category-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .technology-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}

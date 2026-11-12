@@ -53,3 +53,41 @@
     background: var(--silver-dark);
     content: '';
 }
+
+.project-link {
+    display: inline-flex;
+    width: fit-content;
+    margin-top: 20px;
+    align-items: center;
+    gap: 9px;
+    color: var(--paper);
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.project-link span {
+    color: var(--silver);
+    font-size: 16px;
+    transition: transform 180ms ease;
+}
+
+.project-link:hover span {
+    transform: translate(2px, -2px);
+}
+
+.project-card > div:nth-child(2) {
+    max-width: 75%;
+}
+
+@media (max-width: 520px) {
+    .project-card > div:nth-child(2) {
+        max-width: 100%;
+    }
+
+    .project-card .project-visual {
+        width: 58%;
+        opacity: 0.24;
+    }
+}
